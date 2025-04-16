@@ -1,0 +1,54 @@
+.header {
+  &__logo {
+    height: 42px;
+    width: 112px;
+  }
+  &__nav-list {
+    a {
+      font-family: $secondary-font-family;
+      font-weight: 500;
+      line-height: 27px;
+      font-size: 18px;
+      color: $grey-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// $black-color: "000000";
+
+// @mixin main-header {
+//   font: 18px;
+//   line-height: 20px;
+//   color: black;
+// }
+
+// .header {
+//   background-color: black;
+
+//   &__title {
+//     @include main-header;
+//     color: $black-color;
+//     color: rgba($color: #000000, $alpha: 0.5);
+//   }
+
+//   &__button {
+//     &:hover {
+//     }
+
+//     &--red {
+//     }
+//   }
+// }
+
+// .header {
+// }
+
+// .header__title {
+// }
+
+// .header .header__button:hover {
+// }
+
+// .header__list li {
+// }
