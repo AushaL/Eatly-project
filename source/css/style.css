@@ -119,9 +119,27 @@ body {
   padding: 0;
 }
 
+.container {
+  max-width: 1246px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 48px;
+  padding-bottom: 73px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
 .header__logo {
   height: 42px;
   width: 112px;
+  margin-right: 103px;
+}
+.header__nav-list {
+  display: flex;
+  gap: 54px;
 }
 .header__nav-list a {
   font-family: "Inter", sans-serif;
@@ -130,5 +148,22 @@ body {
   font-size: 18px;
   color: #606060;
   text-decoration: none;
+}
+.header__controls {
+  display: flex;
+  gap: 36px;
+  margin-left: auto;
+}
+.header__controls button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+.header__button {
+  color: #f9f9f9;
+  background-color: #6c5fbc;
+  padding: 18px 27px;
+  border-radius: 18px;
 }
 /*# sourceMappingURL=style.css.map */

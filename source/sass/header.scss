@@ -1,9 +1,22 @@
 .header {
+  padding-top: 48px;
+  padding-bottom: 73px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
   &__logo {
     height: 42px;
     width: 112px;
+    margin-right: 103px;
   }
+
   &__nav-list {
+    display: flex;
+    gap: 54px;
+
     a {
       font-family: $secondary-font-family;
       font-weight: 500;
@@ -12,6 +25,26 @@
       color: $grey-color;
       text-decoration: none;
     }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 36px;
+    margin-left: auto;
+
+    button {
+      font-family: $secondary-font-family;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  &__button {
+    color: $background-color;
+    background-color: $blue-color;
+    padding: 18px 27px;
+    border-radius: 18px;
   }
 }
 
