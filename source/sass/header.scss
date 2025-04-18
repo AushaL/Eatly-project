@@ -1,0 +1,87 @@
+.header {
+  padding-top: 48px;
+  padding-bottom: 73px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 42px;
+    width: 112px;
+    margin-right: 103px;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 54px;
+
+    a {
+      font-family: $secondary-font-family;
+      font-weight: 500;
+      line-height: 27px;
+      font-size: 18px;
+      color: $grey-color;
+      text-decoration: none;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 36px;
+    margin-left: auto;
+
+    button {
+      font-family: $secondary-font-family;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  &__button {
+    color: $background-color;
+    background-color: $blue-color;
+    padding: 18px 27px;
+    border-radius: 18px;
+  }
+}
+
+// $black-color: "000000";
+
+// @mixin main-header {
+//   font: 18px;
+//   line-height: 20px;
+//   color: black;
+// }
+
+// .header {
+//   background-color: black;
+
+//   &__title {
+//     @include main-header;
+//     color: $black-color;
+//     color: rgba($color: #000000, $alpha: 0.5);
+//   }
+
+//   &__button {
+//     &:hover {
+//     }
+
+//     &--red {
+//     }
+//   }
+// }
+
+// .header {
+// }
+
+// .header__title {
+// }
+
+// .header .header__button:hover {
+// }
+
+// .header__list li {
+// }
