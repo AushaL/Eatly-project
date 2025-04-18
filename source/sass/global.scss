@@ -17,13 +17,20 @@ $secondary-font-family: "Inter", sans-serif;
 $decor-font-family: "Manrope", sans-serif;
 $secondary-decor-font-family: "Quicksand", sans-serif;
 
+@mixin button {
+  font-family: $secondary-font-family;
+  color: $white-color;
+  background-color: $blue-color;
+  text-align: center;
+}
+
 // Body
 
 body {
   font-family: $main-font-family;
   font-size: 18px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 28px;
   color: $grey-color;
   max-width: 100%;
   min-height: 100%;

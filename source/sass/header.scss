@@ -1,10 +1,11 @@
 .header {
-  padding-top: 48px;
-  padding-bottom: 73px;
+  padding-top: 28px;
 
   &__nav {
     display: flex;
     align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cbcbcb;
   }
 
   &__logo {
@@ -29,20 +30,24 @@
 
   &__controls {
     display: flex;
-    gap: 36px;
+    gap: 9px;
     margin-left: auto;
-
-    button {
-      font-family: $secondary-font-family;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 27px;
-    }
   }
 
-  &__button {
-    color: $background-color;
-    background-color: $blue-color;
+  &__login-button {
+    color: $grey-color;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 18px 27px;
+  }
+
+  &__sign-up-button {
+    @include button;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
     padding: 18px 27px;
     border-radius: 18px;
   }
