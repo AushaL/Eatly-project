@@ -1,0 +1,20 @@
+.rating {
+  &__logo {
+    width: 123px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  &__stars {
+    width: 96px;
+    height: 15px;
+    margin-right: 9px;
+  }
+  &__amount {
+    font-family: $secondary-decor-font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $light-grey-color-2;
+  }
+}
