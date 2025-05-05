@@ -1,10 +1,13 @@
 .promo {
-  padding-top: 103px;
-  padding-bottom: 98px;
-
   &__container {
     display: flex;
-    gap: 287px;
+    align-items: center;
+    gap: 219px;
+    padding-left: 111px;
+    padding-right: 22px;
+    padding-top: 103px;
+    padding-bottom: 98px;
+    border-bottom: $decor-line;
   }
 
   &__screen {
@@ -12,14 +15,16 @@
     height: 625px;
   }
 
+  &__column {
+    width: 560px;
+  }
+
   &__title {
-    color: $black-color;
-    font-weight: 700;
-    font-size: 51px;
-    line-height: 58px;
-    width: 500px;
+    @include title-2;
     text-align: left;
     margin-bottom: 63px;
+    position: relative;
+    right: 25px;
 
     span {
       color: $blue-color;
@@ -28,11 +33,23 @@
 
   &__list {
     margin-bottom: 61px;
+
+    li {
+      list-style: disc;
+    }
   }
 
   &__description {
-    width: 547px;
+    font-family: $secondary-font-family;
+    color: $light-grey-color;
+    font-size: 20px;
+    line-height: 30px;
+    width: 495px;
     margin-bottom: 28px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   &__button {
@@ -44,6 +61,8 @@
     padding-right: 31px;
     border-radius: 15px;
     margin-left: 15px;
+    position: relative;
+    right: 40px;
   }
 
   &__button-arrow {
@@ -57,6 +76,6 @@
     transform: rotate(-3deg);
     position: relative;
     top: 45px;
-    right: 27px;
+    right: 67px;
   }
 }

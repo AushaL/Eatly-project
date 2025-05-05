@@ -7,11 +7,26 @@
 
   &__container {
     display: flex;
-    gap: 132px;
     text-align: center;
     justify-content: center;
-
+    gap: 132px;
     margin-bottom: 103.5px;
+  }
+
+  &__column {
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -65px;
+        width: 1px;
+        height: 100%;
+        background-color: rgba($color: #c5c5c5, $alpha: 0.15);
+      }
+    }
   }
 
   &__heading {

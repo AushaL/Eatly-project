@@ -1,12 +1,12 @@
 .restaurants {
-  padding-top: 100px;
-  padding-bottom: 120px;
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    border-bottom: $decor-line;
+  }
 
   &__title {
-    color: $light-black-color;
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 25px;
+    @include title;
     margin-bottom: 86px;
     text-align: center;
 
@@ -21,10 +21,27 @@
     gap: 30px;
   }
 
+  &__item {
+    margin-bottom: 66px;
+    border: 1px #f4f4f6 solid;
+    width: 396px;
+  }
+
   &__photo {
     width: 396px;
     height: 176px;
-    margin-bottom: 11px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+
+  &__info {
+    background-color: $white-color;
+    padding-top: 11px;
+    padding-bottom: 18px;
+    padding-left: 34px;
+    padding-right: 27px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 
   &__tag {
@@ -38,22 +55,63 @@
     font-weight: 600;
     font-size: 26px;
     line-height: 42px;
+    margin-bottom: 2px;
   }
 
-  &__duration {
+  &__decor {
+    font-family: $decor-font-family;
     color: $light-grey-color-2;
     font-size: 19px;
     line-height: 26px;
+  }
+
+  &__time {
+    margin-right: 6px;
   }
 
   &__rating {
-    color: $light-grey-color-2;
-    font-size: 19px;
-    line-height: 26px;
+    display: flex;
+    align-items: center;
   }
 
   &__star {
-    width: 26px;
-    height: 26px;
+    width: 17px;
+    height: 17px;
+    margin-right: 6px;
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+    @include view-all-link;
+    text-align: right;
+  }
+
+  &__right-arrow {
+    @include right-arrow;
+    position: relative;
+    bottom: 2px;
+
+    path {
+      fill: $light-grey-color-2;
+    }
+  }
+
+  &__bookmark {
+    padding: 5px 6px;
+    background-color: $light-blue-color;
+    border-radius: 60px;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+  }
+
+  &__bookmark-img {
+    width: 15px;
+    height: 20px;
   }
 }

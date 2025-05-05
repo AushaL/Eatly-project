@@ -1,0 +1,74 @@
+.reviews {
+  padding-top: 116px;
+  padding-bottom: 162px;
+
+  &__title {
+    text-align: center;
+    color: $light-black-color;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 25px;
+    margin-bottom: 80px;
+
+    span {
+      color: $blue-color;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+  }
+
+  &__card {
+    width: 528px;
+    background-color: $white-color;
+    padding: 38px 43px;
+    border-radius: 21px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__photo {
+    width: 71px;
+    height: 71px;
+    margin-right: 21px;
+  }
+
+  &__name {
+    color: #030314;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    margin-bottom: 0.5px;
+  }
+  &__subheading {
+    color: $light-grey-color;
+    font-family: $decor-font-family-2;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  &__quote-image {
+    margin-left: auto;
+    width: 59px;
+    height: 44px;
+  }
+
+  &__quote {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 39px;
+  }
+
+  &__stars {
+    width: 138px;
+    height: 23px;
+  }
+}

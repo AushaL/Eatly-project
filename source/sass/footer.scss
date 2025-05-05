@@ -1,0 +1,73 @@
+.footer {
+  padding-top: 96px;
+  padding-bottom: 81px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding-bottom: 36px;
+    border-bottom: $decor-line;
+  }
+
+  &__logo {
+    width: 151px;
+    height: 57px;
+  }
+
+  &__nav-list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+
+  &__nav-link {
+    color: #999999;
+    font-family: $secondary-font-family;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__container {
+    padding-top: 57px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__copyright {
+    color: #999999;
+    font-family: $secondary-font-family;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    margin-left: auto;
+    padding-right: 9px;
+  }
+
+  &__insta-logo {
+    width: 21px;
+    height: 21px;
+  }
+
+  &__linkedin-logo {
+    width: 21px;
+    height: 20px;
+  }
+
+  &__fb-logo {
+    width: 10px;
+    height: 21px;
+  }
+
+  &__twitter-logo {
+    width: 21px;
+    height: 17px;
+  }
+}
