@@ -25,6 +25,7 @@
     margin-bottom: 66px;
     border: 1px #f4f4f6 solid;
     width: 396px;
+    box-shadow: 5.95px 71.35px 35.67px 0px #e5e5e5b2;
   }
 
   &__photo {
@@ -46,8 +47,21 @@
 
   &__tag {
     font-size: 14px;
-    line-height: 100%;
+    line-height: 20px;
+    padding: 3px 6px;
     margin-bottom: 1px;
+    height: 25px;
+    border-radius: 5px;
+
+    &--yellow {
+      @include tag-yellow;
+      width: 66px;
+    }
+
+    &--red {
+      @include tag-red;
+      width: 74px;
+    }
   }
 
   &__heading {

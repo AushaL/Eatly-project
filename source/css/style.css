@@ -429,6 +429,7 @@ a {
   margin-bottom: 66px;
   border: 1px #f4f4f6 solid;
   width: 396px;
+  box-shadow: 5.95px 71.35px 35.67px 0px rgba(229, 229, 229, 0.6980392157);
 }
 .restaurants__photo {
   width: 396px;
@@ -447,8 +448,21 @@ a {
 }
 .restaurants__tag {
   font-size: 14px;
-  line-height: 100%;
+  line-height: 20px;
+  padding: 3px 6px;
   margin-bottom: 1px;
+  height: 25px;
+  border-radius: 5px;
+}
+.restaurants__tag--yellow {
+  color: #daa31a;
+  background-color: #f7edd0;
+  width: 66px;
+}
+.restaurants__tag--red {
+  color: #fb471d;
+  background-color: #f7c5ba;
+  width: 74px;
 }
 .restaurants__heading {
   color: #323142;
@@ -539,6 +553,7 @@ a {
   width: 224px;
   padding: 26px 18px 27px 6px;
   border-radius: 34.5px;
+  box-shadow: 5.95px 71.35px 35.67px 0px rgba(229, 229, 229, 0.6980392157);
 }
 .dishes__photo {
   width: 201px;
@@ -556,7 +571,25 @@ a {
 }
 .dishes__tag {
   font-size: 11px;
-  line-height: 100%;
+  line-height: 18px;
+  padding: 2px 6px 2px 7px;
+  height: 22px;
+  border-radius: 5px;
+}
+.dishes__tag--yellow {
+  width: 59px;
+  color: #daa31a;
+  background-color: #f7edd0;
+}
+.dishes__tag--red {
+  width: 64px;
+  color: #fb471d;
+  background-color: #f7c5ba;
+}
+.dishes__tag--green {
+  width: 64px;
+  color: #309d5b;
+  background-color: #b3e6c7;
 }
 .dishes__item-heading {
   color: #201f1f;
@@ -675,6 +708,9 @@ a {
   font-size: 12px;
   line-height: 140%;
 }
+.app-preview__status--red {
+  color: #f1534e;
+}
 .app-preview__time {
   color: #acadb9;
   font-weight: 500;
@@ -785,8 +821,15 @@ a {
   background-color: #dbd9ee;
   width: 440px;
   height: 68px;
+  padding: 22px 200px 22px 22px;
   border-radius: 14px;
   border: none;
+}
+.discount-banner__input::placeholder {
+  color: #878787;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 1.5px;
 }
 .discount-banner__button {
   width: 132px;

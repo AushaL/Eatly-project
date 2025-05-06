@@ -28,6 +28,7 @@
     width: 224px;
     padding: 26px 18px 27px 6px;
     border-radius: 34.5px;
+    box-shadow: 5.95px 71.35px 35.67px 0px #e5e5e5b2;
   }
 
   &__photo {
@@ -49,7 +50,25 @@
 
   &__tag {
     font-size: 11px;
-    line-height: 100%;
+    line-height: 18px;
+    padding: 2px 6px 2px 7px;
+    height: 22px;
+    border-radius: 5px;
+
+    &--yellow {
+      width: 59px;
+      @include tag-yellow;
+    }
+
+    &--red {
+      width: 64px;
+      @include tag-red;
+    }
+
+    &--green {
+      width: 64px;
+      @include tag-green;
+    }
   }
 
   &__item-heading {
