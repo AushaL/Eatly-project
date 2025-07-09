@@ -14,6 +14,7 @@
       color: $blue-color;
     }
   }
+
   &__list {
     display: flex;
     align-items: center;
@@ -70,5 +71,79 @@
   &__stars {
     width: 138px;
     height: 23px;
+  }
+}
+
+// tablet
+
+@media (max-width: $tablet-width) {
+  .reviews {
+    padding-top: 82px;
+    padding-bottom: 129px;
+
+    &__title {
+      font-size: 32px;
+      line-height: 18px;
+      margin-bottom: 56px;
+    }
+
+    &__list {
+      gap: 19px;
+    }
+
+    &__card {
+      width: 375px;
+      padding: 27px 30px;
+      border-radius: 15px;
+    }
+
+    &__info {
+      margin-bottom: 23px;
+    }
+
+    &__photo {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    &__name {
+      color: #030314;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 31px;
+      margin-bottom: 0.5px;
+    }
+
+    &__subheading {
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &__quote-image {
+      width: 42px;
+      height: 31px;
+    }
+
+    &__quote {
+      font-size: 13px;
+      line-height: 18px;
+      margin-bottom: 27px;
+    }
+
+    &__stars {
+      width: 98px;
+      height: 16px;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: $mobile-width) {
+  .reviews {
+    &__list {
+      flex-direction: column;
+    }
   }
 }

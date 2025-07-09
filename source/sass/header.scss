@@ -9,9 +9,13 @@
   }
 
   &__logo {
-    height: 42px;
     width: 112px;
+    height: 42px;
     margin-right: 103px;
+  }
+
+  &__menu {
+    display: none;
   }
 
   &__nav-list {
@@ -34,59 +38,101 @@
     margin-left: auto;
   }
 
-  &__login-button {
-    color: $grey-color;
-    font-family: $secondary-font-family;
+  &__button {
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
     padding: 18px 27px;
+  }
+
+  &__login-button {
+    color: $grey-color;
+    font-family: $secondary-font-family;
   }
 
   &__sign-up-button {
     @include button;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 18px 27px;
     border-radius: 18px;
   }
 }
 
-// $black-color: "000000";
+@media (max-width: $tablet-width) {
+  .header {
+    padding-top: 20px;
 
-// @mixin main-header {
-//   font: 18px;
-//   line-height: 20px;
-//   color: black;
-// }
+    &__nav {
+      padding-bottom: 18px;
+    }
 
-// .header {
-//   background-color: black;
+    &__logo {
+      width: 80px;
+      height: 30px;
+      margin-right: 73px;
+    }
 
-//   &__title {
-//     @include main-header;
-//     color: $black-color;
-//     color: rgba($color: #000000, $alpha: 0.5);
-//   }
+    &__menu {
+      display: none;
+    }
 
-//   &__button {
-//     &:hover {
-//     }
+    &__nav-list {
+      gap: 38px;
 
-//     &--red {
-//     }
-//   }
-// }
+      a {
+        font-size: 13px;
+        line-height: 19px;
+      }
+    }
+    &__controls {
+      gap: 6px;
+    }
 
-// .header {
-// }
+    &__button {
+      font-size: 13px;
+      line-height: 19px;
+      padding: 13px 19px;
+    }
 
-// .header__title {
-// }
+    &__sign-up-button {
+      border-radius: 13px;
+    }
+  }
+}
 
-// .header .header__button:hover {
-// }
+@media (max-width: $mobile-width) {
+  .header {
+    padding-top: 33px;
 
-// .header__list li {
-// }
+    &__nav {
+      padding-bottom: 31px;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      width: 112px;
+      height: 42px;
+    }
+
+    &__menu {
+      display: block;
+      width: 32px;
+      height: 22px;
+    }
+
+    &__nav-list {
+      display: none;
+
+      a {
+        font-family: $secondary-font-family;
+        font-weight: 500;
+        line-height: 27px;
+        font-size: 18px;
+        color: $grey-color;
+        text-decoration: none;
+      }
+    }
+
+    &__controls {
+      display: none;
+    }
+  }
+}

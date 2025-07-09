@@ -17,6 +17,12 @@
       <div class="container">
         <nav class="header__nav">
           <img class="header__logo" src="./img/icons/logo.svg" alt="logo" />
+          <img
+            class="header__menu"
+            src="./img/mobile/header/menu.png"
+            alt="menu"
+          />
+
           <ul class="header__nav-list">
             <li><a href="#">Menu</a></li>
             <li><a href="#">Blog</a></li>
@@ -25,8 +31,10 @@
           </ul>
 
           <div class="header__controls">
-            <button class="header__login-button">Login</button>
-            <button class="header__sign-up-button">Sign up</button>
+            <button class="header__login-button header__button">Login</button>
+            <button class="header__sign-up-button header__button">
+              Sign up
+            </button>
           </div>
         </nav>
       </div>
@@ -39,7 +47,9 @@
             <div class="hero__column">
               <p class="hero__dec-description">OVER 1000 USERS</p>
               <h1 class="hero__title">
-                Enjoy Foods All Over The <span>World</span>
+                Enjoy Foods <span class="hero__span">All</span> Over
+                <span class="hero__span">The</span>
+                <span class="hero__title-span">World</span>
               </h1>
               <p class="hero__description">
                 EatLy help you set saving goals, earn cash back offers, Go to
@@ -149,11 +159,14 @@
 
           <div class="restaurants__list">
             <div class="restaurants__item">
-              <img
-                class="restaurants__photo"
-                src="./img/restaurants/chicken.png"
-                alt="dish"
-              />
+              <div class="restaurants__div-photo">
+                <img
+                  class="restaurants__photo"
+                  src="./img/restaurants/chicken.png"
+                  alt="dish"
+                />
+              </div>
+
               <div class="restaurants__info">
                 <p class="restaurants__tag restaurants__tag--yellow">Healthy</p>
                 <p class="restaurants__heading">The Chicken King</p>
@@ -182,11 +195,13 @@
             </div>
 
             <div class="restaurants__item">
-              <img
-                class="restaurants__photo"
-                src="./img/restaurants/burger.png"
-                alt="dish"
-              />
+              <div class="restaurants__div-photo">
+                <img
+                  class="restaurants__photo"
+                  src="./img/restaurants/burger.png"
+                  alt="dish"
+                />
+              </div>
               <div class="restaurants__info">
                 <p class="restaurants__tag restaurants__tag--red">Trending</p>
                 <p class="restaurants__heading">The Burger King</p>
@@ -215,11 +230,13 @@
             </div>
 
             <div class="restaurants__item">
-              <img
-                class="restaurants__photo"
-                src="./img/restaurants/chicken.png"
-                alt="dish"
-              />
+              <div class="restaurants__div-photo">
+                <img
+                  class="restaurants__photo"
+                  src="./img/restaurants/chicken.png"
+                  alt="dish"
+                />
+              </div>
               <div class="restaurants__info">
                 <p class="restaurants__tag restaurants__tag--yellow">Healthy</p>
                 <p class="restaurants__heading">The Chicken King</p>
@@ -272,39 +289,41 @@
         <div class="container dishes__container">
           <h2 class="dishes__title">Our Top <span>Dishes</span></h2>
 
-          <div class="dishes__list">
-            <div class="dishes__item">
+          <div class="dishes-cards">
+            <div class="dishes-cards__item">
               <img
-                class="dishes__photo"
+                class="dishes-cards__photo"
                 src="./img/dishes/chicken-hell.png"
                 alt="dish"
               />
 
-              <button class="dishes__heart-button">
+              <button class="dishes-cards__heart-button">
                 <img
-                  class="dishes__heart"
+                  class="dishes-cards__heart"
                   src="./img/icons/black-heart.svg"
                   alt="heart"
                 />
               </button>
 
-              <div class="dishes__info">
-                <p class="dishes__tag dishes__tag--yellow">Healthy</p>
-                <h3 class="dishes__item-heading">Chicken Hell</h3>
+              <div class="dishes-cards__info">
+                <p class="dishes-cards__tag dishes-cards__tag--yellow">
+                  Healthy
+                </p>
+                <h3 class="dishes-cards__item-heading">Chicken Hell</h3>
 
-                <div class="dishes__info-container">
-                  <p class="dishes__decor dishes__time">24min •</p>
+                <div class="dishes-cards__info-container">
+                  <p class="dishes-cards__decor dishes-cards__time">24min •</p>
                   <img
-                    class="dishes__star"
+                    class="dishes-cards__star"
                     src="./img/icons/star.svg"
                     alt="star"
                   />
-                  <p class="dishes__decor dishes__rating">4.8</p>
+                  <p class="dishes-cards__rating">4.8</p>
                 </div>
 
-                <div class="dishes__price-container">
-                  <p class="dishes__price">$12<span>.99</span></p>
-                  <button class="dishes__add-button">
+                <div class="dishes-cards__price-container">
+                  <p class="dishes-cards__price">$12<span>.99</span></p>
+                  <button class="dishes-cards__add-button">
                     <img
                       class="dishes__cross"
                       src="./img/icons/cross.svg"
@@ -315,40 +334,40 @@
               </div>
             </div>
 
-            <div class="dishes__item">
+            <div class="dishes-cards__item">
               <img
-                class="dishes__photo"
+                class="dishes-cards__photo"
                 src="./img/dishes/swe-dish-1.png"
                 alt="dish"
               />
 
-              <button class="dishes__heart-button">
+              <button class="dishes-cards__heart-button">
                 <img
-                  class="dishes__heart"
+                  class="dishes-cards__heart"
                   src="./img/icons/black-heart.svg"
                   alt="heart"
                 />
               </button>
 
-              <div class="dishes__info">
-                <p class="dishes__tag dishes__tag--red">Trending</p>
-                <h3 class="dishes__item-heading">Swe Dish</h3>
+              <div class="dishes-cards__info">
+                <p class="dishes-cards__tag dishes__tag--red">Trending</p>
+                <h3 class="dishes-cards__item-heading">Swe Dish</h3>
 
-                <div class="dishes__info-container">
-                  <p class="dishes__decor dishes__time">34min •</p>
+                <div class="dishes-cards__info-container">
+                  <p class="dishes-cards__decor dishes__time">34min •</p>
                   <img
-                    class="dishes__star"
+                    class="dishes-cards__star"
                     src="./img/icons/star.svg"
                     alt="star"
                   />
-                  <p class="dishes__decor dishes__rating">4.9</p>
+                  <p class="dishes-cards__decor dishes__rating">4.9</p>
                 </div>
 
-                <div class="dishes__price-container">
-                  <p class="dishes__price">$19<span>.99</span></p>
-                  <button class="dishes__add-button">
+                <div class="dishes-cards__price-container">
+                  <p class="dishes-cards__price">$19<span>.99</span></p>
+                  <button class="dishes-cards__add-button">
                     <img
-                      class="dishes__cross"
+                      class="dishes-cards__cross"
                       src="./img/icons/cross.svg"
                       alt="cross"
                     />
@@ -357,40 +376,40 @@
               </div>
             </div>
 
-            <div class="dishes__item">
+            <div class="dishes-cards__item">
               <img
-                class="dishes__photo"
+                class="dishes-cards__photo"
                 src="./img/dishes/swe-dish-2.png"
                 alt="dish"
               />
-              <button class="dishes__heart-button">
+              <button class="dishes-cards__heart-button">
                 <img
-                  class="dishes__heart"
+                  class="dishes-cards__heart"
                   src="./img/icons/black-heart.svg"
                   alt="heart"
                 />
               </button>
 
-              <div class="dishes__info">
-                <p class="dishes__tag dishes__tag--green">Supreme</p>
-                <h3 class="dishes__item-heading">Swe Dish</h3>
+              <div class="dishes-cards__info">
+                <p class="dishes-cards__tag dishes__tag--green">Supreme</p>
+                <h3 class="dishes-cards__item-heading">Swe Dish</h3>
 
-                <div class="dishes__info-container">
-                  <p class="dishes__decor dishes__time">34min •</p>
+                <div class="dishes-cards__info-container">
+                  <p class="dishes-cards__decor dishes__time">34min •</p>
                   <img
-                    class="dishes__star"
+                    class="dishes-cards__star"
                     src="./img/icons/star.svg"
                     alt="star"
                   />
 
-                  <p class="dishes__decor dishes__rating">4.9</p>
+                  <p class="dishes-cards__decor dishes__rating">4.9</p>
                 </div>
 
-                <div class="dishes__price-container">
-                  <p class="dishes__price">$19<span>.99</span></p>
-                  <button class="dishes__add-button">
+                <div class="dishes-cards__price-container">
+                  <p class="dishes-cards__price">$19<span>.99</span></p>
+                  <button class="dishes-cards__add-button">
                     <img
-                      class="dishes__cross"
+                      class="dishes-cards__cross"
                       src="./img/icons/cross.svg"
                       alt="cross"
                     />
@@ -399,40 +418,40 @@
               </div>
             </div>
 
-            <div class="dishes__item">
+            <div class="dishes-cards__item">
               <img
-                class="dishes__photo"
+                class="dishes-cards__photo"
                 src="./img/dishes/chicken-hell.png"
                 alt="dish"
               />
 
-              <button class="dishes__heart-button">
+              <button class="dishes-cards__heart-button">
                 <img
-                  class="dishes__heart"
+                  class="dishes-cards__heart"
                   src="./img/icons/black-heart.svg"
                   alt="heart"
                 />
               </button>
 
-              <div class="dishes__info">
-                <p class="dishes__tag dishes__tag--yellow">Healthy</p>
-                <h3 class="dishes__item-heading">Chicken Hell</h3>
+              <div class="dishes-cards__info">
+                <p class="dishe-cards__tag dishes__tag--yellow">Healthy</p>
+                <h3 class="dishes-cards__item-heading">Chicken Hell</h3>
 
-                <div class="dishes__info-container">
-                  <p class="dishes__decor dishes__time">24min •</p>
+                <div class="dishes-cards__info-container">
+                  <p class="dishes-cards__decor dishes__time">24min •</p>
                   <img
-                    class="dishes__star"
+                    class="dishes-cards__star"
                     src="./img/icons/star.svg"
                     alt="star"
                   />
-                  <p class="dishes__decor dishes__rating">4.8</p>
+                  <p class="dishes-cards__decor dishes__rating">4.8</p>
                 </div>
 
-                <div class="dishes__price-container">
-                  <p class="dishes__price">$12<span>.99</span></p>
-                  <button class="dishes__add-button">
+                <div class="dishes-cards__price-container">
+                  <p class="dishes-cards__price">$12<span>.99</span></p>
+                  <button class="dishes-cards__add-button">
                     <img
-                      class="dishes__cross"
+                      class="dishes-cards__cross"
                       src="./img/icons/cross.svg"
                       alt="cross"
                     />
@@ -441,40 +460,40 @@
               </div>
             </div>
 
-            <div class="dishes__item">
+            <div class="dishes-cards__item">
               <img
-                class="dishes__photo"
+                class="dishes-cards__photo"
                 src="./img/dishes/swe-dish-1.png"
                 alt="dish"
               />
 
-              <button class="dishes__heart-button">
+              <button class="dishes-cards__heart-button">
                 <img
-                  class="dishes__heart"
+                  class="dishes-cards__heart"
                   src="./img/icons/black-heart.svg"
                   alt="heart"
                 />
               </button>
 
-              <div class="dishes__info">
-                <p class="dishes__tag dishes__tag--red">Trending</p>
-                <h3 class="dishes__item-heading">Swe Dish</h3>
+              <div class="dishes-cards__info">
+                <p class="dishes-cards__tag dishes__tag--red">Trending</p>
+                <h3 class="dishes-cards__item-heading">Swe Dish</h3>
 
-                <div class="dishes__info-container">
-                  <p class="dishes__decor dishes__time">34min •</p>
+                <div class="dishes-cards__info-container">
+                  <p class="dishes-cards__decor dishes__time">34min •</p>
                   <img
-                    class="dishes__star"
+                    class="dishes-cards__star"
                     src="./img/icons/star.svg"
                     alt="star"
                   />
-                  <p class="dishes__decor dishes__rating">4.9</p>
+                  <p class="dishes-cards__decor dishes__rating">4.9</p>
                 </div>
 
-                <div class="dishes__price-container">
-                  <p class="dishes__price">$19<span>.99</span></p>
-                  <button class="dishes__add-button">
+                <div class="dishes-cards__price-container">
+                  <p class="dishes-cards__price">$19<span>.99</span></p>
+                  <button class="dishes-cards__add-button">
                     <img
-                      class="dishes__cross"
+                      class="dishes-cards__cross"
                       src="./img/icons/cross.svg"
                       alt="cross"
                     />
@@ -552,6 +571,11 @@
               </div>
               <p class="app-preview__time">Yesterday</p>
             </div>
+            <img
+              class="app-preview__bg-arrow"
+              src="./img/mobile/app-preview/bg-arrow.svg"
+              alt="bg-arrow"
+            />
           </div>
 
           <img
@@ -569,9 +593,23 @@
           <div class="reviews__list">
             <div class="reviews__card">
               <div class="reviews__info">
+                <!-- <picture>
+                  <source
+                    media="(max-width: 900px)"
+                    srcset="img/mobile/reviews/review-photo.png, img/mobile/reviews/review-photo-2x.png 2dppx"
+                  />
+                  <source media="(max-width: 1400px)" srcset="" />
+                  <img
+                    class="reviews__photo"
+                    src="img/reviews/review-photo.png"
+                    srcset="img/reviews/review-photo-2x.png 2dppx, img/reviews/review-photo-3x.png 3dppx"
+                    alt="photo"
+                  />
+                </picture> -->
                 <img
                   class="reviews__photo"
                   src="img/reviews/review-photo.png"
+                  srcset="img/reviews/review-photo-2x.png 2dppx, img/reviews/review-photo-3x.png 3dppx"
                   alt="photo"
                 />
                 <div>

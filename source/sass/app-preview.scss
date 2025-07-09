@@ -65,5 +65,124 @@
   &__image {
     width: 534px;
     height: 466px;
+    box-shadow: 5.95px 71.35px 35.67px 0px #e5e5e5b2;
+  }
+
+  &__bg-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .app-preview {
+    &__container {
+      padding-top: 71px;
+      padding-bottom: 135px;
+    }
+
+    &__title {
+      @include tablet-title-2;
+      width: 398px;
+      margin-bottom: 34px;
+    }
+
+    &__item {
+      margin-bottom: 11px;
+      padding: 3px 12px;
+      border-radius: 8.5px;
+      width: 245px;
+    }
+
+    &__item-heading {
+      font-size: 13px;
+      line-height: 140%;
+      margin-bottom: 3px;
+    }
+
+    &__status {
+      font-size: 8px;
+      line-height: 140%;
+    }
+
+    &__time {
+      font-size: 9px;
+      line-height: 140%;
+    }
+
+    &__photo {
+      width: 55px;
+      height: 57px;
+      margin-right: 14px;
+    }
+
+    &__image {
+      width: 380px;
+      height: 332px;
+      box-shadow: 5.95px 71.35px 35.67px 0px #e5e5e5b2;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: $mobile-width) {
+  .app-preview {
+    &__container {
+      flex-direction: column;
+      padding-top: 85px;
+      padding-bottom: 105px;
+    }
+
+    &__title {
+      @include mobile-title-2;
+      width: 300px;
+      margin-bottom: 54px;
+    }
+
+    &__column {
+      margin-bottom: 100px;
+      position: relative;
+    }
+
+    &__bg-arrow {
+      display: block;
+      position: absolute;
+      width: 57px;
+      height: 101px;
+      right: 10px;
+      bottom: -55px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+      padding: 3px 11px;
+      border-radius: 8px;
+      width: 228px;
+    }
+
+    &__item-heading {
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+
+    &__status {
+      font-size: 8px;
+    }
+
+    &__time {
+      font-size: 8px;
+    }
+
+    &__photo {
+      width: 51px;
+      height: 53px;
+      margin-right: 13px;
+    }
+
+    &__image {
+      width: 316px;
+      height: 276px;
+      box-shadow: 5.95px 71.35px 35.67px 0px #e5e5e5b2;
+    }
   }
 }
