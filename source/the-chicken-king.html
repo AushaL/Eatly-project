@@ -17,17 +17,22 @@
       <div class="container">
         <nav class="header__nav">
           <img class="header__logo" src="./img/icons/logo.svg" alt="logo" />
-          <img
-            class="header__menu"
-            src="./img/mobile/header/menu.png"
-            alt="menu"
-          />
-          <ul class="header__nav-list">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <button class="header__burger">
+            <img
+              class="header__menu"
+              src="./img/mobile/header/menu.png"
+              alt="menu"
+            />
+          </button>
+
+          <div class="header__nav-list">
+            <div><a href="#">Menu</a></div>
+            <div><a href="#">Blog</a></div>
+            <div><a href="#">Pricing</a></div>
+            <div><a href="#">Contact</a></div>
+            <button class="header__close-btn">Х</button>
+          </div>
+
           <div class="header__controls">
             <button class="header__login-button header__button">Login</button>
             <button class="header__sign-up-button header__button">
@@ -357,13 +362,20 @@
             />
             <div class="categories__search">
               <form class="categories__form" action="POST">
-                <input
-                  class="categories__input"
-                  type="search"
-                  placeholder="Search"
-                  name="search"
-                  id="search"
-                />
+                <div class="categories__input-box">
+                  <img
+                    class="categories__input-img"
+                    src="./img/the-chicken-king/icons/search.svg"
+                    alt="search"
+                  />
+                  <input
+                    class="categories__input"
+                    type="search"
+                    placeholder="Search"
+                    name="search"
+                    id="search"
+                  />
+                </div>
               </form>
               <div class="categories__buttons">
                 <button class="categories__food-button">Food</button>
@@ -458,6 +470,7 @@
           </div>
         </div>
       </section>
+
       <section class="faq">
         <div class="container">
           <div class="faq__title-div">
@@ -561,5 +574,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -26,6 +26,7 @@
   &__item {
     border-bottom: $decor-line;
     margin-bottom: 29px;
+    position: relative;
 
     &:last-of-type {
       margin-bottom: 0px;
@@ -43,7 +44,33 @@
     font-size: 20px;
     line-height: 160%;
     width: 800px;
-    margin-bottom: 43px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &.open {
+      max-height: 200px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__button {
+    background-color: $blue-color;
+    background-image: url("../img/the-chicken-king/icons/faq-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &.open {
+      background-image: url("../img/the-chicken-king/icons/faq-minus.png");
+    }
   }
 }
 

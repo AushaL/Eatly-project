@@ -1,6 +1,15 @@
 .reviews {
+  position: relative;
   padding-top: 116px;
   padding-bottom: 162px;
+
+  &__scrollbar {
+    width: 667px !important;
+
+    .swiper-scrollbar-drag {
+      width: 191px !important;
+    }
+  }
 
   &__title {
     text-align: center;

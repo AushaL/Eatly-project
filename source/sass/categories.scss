@@ -30,6 +30,18 @@
     }
   }
 
+  &__input-box {
+    position: relative;
+  }
+
+  &__input-img {
+    position: absolute;
+    width: 36px;
+    height: 42px;
+    left: 29px;
+    top: 17px;
+  }
+
   &__buttons {
     display: flex;
     gap: 0;

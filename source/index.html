@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Eatly</title>
   </head>
@@ -17,18 +21,21 @@
       <div class="container">
         <nav class="header__nav">
           <img class="header__logo" src="./img/icons/logo.svg" alt="logo" />
-          <img
-            class="header__menu"
-            src="./img/mobile/header/menu.png"
-            alt="menu"
-          />
+          <button class="header__burger">
+            <img
+              class="header__menu"
+              src="./img/mobile/header/menu.png"
+              alt="menu"
+            />
+          </button>
 
-          <ul class="header__nav-list">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <div class="header__nav-list">
+            <div><a href="#">Menu</a></div>
+            <div><a href="#">Blog</a></div>
+            <div><a href="#">Pricing</a></div>
+            <div><a href="#">Contact</a></div>
+            <button class="header__close-btn">Х</button>
+          </div>
 
           <div class="header__controls">
             <button class="header__login-button header__button">Login</button>
@@ -590,75 +597,102 @@
         <div class="container">
           <h2 class="reviews__title"><span>Customer</span> Say</h2>
 
-          <div class="reviews__list">
-            <div class="reviews__card">
-              <div class="reviews__info">
-                <!-- <picture>
-                  <source
-                    media="(max-width: 900px)"
-                    srcset="img/mobile/reviews/review-photo.png, img/mobile/reviews/review-photo-2x.png 2dppx"
-                  />
-                  <source media="(max-width: 1400px)" srcset="" />
+          <div class="swiper">
+            <div class="reviews__list swiper-wrapper">
+              <div class="reviews__card swiper-slide">
+                <div class="reviews__info">
+                  <!-- <picture>
+                    <source
+                      media="(max-width: 900px)"
+                      srcset="img/mobile/reviews/review-photo.png, img/mobile/reviews/review-photo-2x.png 2dppx"
+                    />
+                    <source media="(max-width: 1400px)" srcset="" />
+                    <img
+                      class="reviews__photo"
+                      src="img/reviews/review-photo.png"
+                      srcset="img/reviews/review-photo-2x.png 2dppx, img/reviews/review-photo-3x.png 3dppx"
+                      alt="photo"
+                    />
+                  </picture> -->
                   <img
                     class="reviews__photo"
                     src="img/reviews/review-photo.png"
                     srcset="img/reviews/review-photo-2x.png 2dppx, img/reviews/review-photo-3x.png 3dppx"
                     alt="photo"
                   />
-                </picture> -->
-                <img
-                  class="reviews__photo"
-                  src="img/reviews/review-photo.png"
-                  srcset="img/reviews/review-photo-2x.png 2dppx, img/reviews/review-photo-3x.png 3dppx"
-                  alt="photo"
-                />
-                <div>
-                  <p class="reviews__name">Alexander R.</p>
-                  <p class="reviews__subheading">01 Year With Us</p>
+                  <div>
+                    <p class="reviews__name">Alexander R.</p>
+                    <p class="reviews__subheading">01 Year With Us</p>
+                  </div>
+                  <img
+                    class="reviews__quote-image"
+                    src="img/icons/quote.svg"
+                    alt="quote"
+                  />
                 </div>
+                <blockquote class="reviews__quote">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </blockquote>
                 <img
-                  class="reviews__quote-image"
-                  src="img/icons/quote.svg"
-                  alt="quote"
+                  class="reviews__stars"
+                  src="img/icons/stars.svg"
+                  alt="stars"
                 />
               </div>
-              <blockquote class="reviews__quote">
-                “ Online invoice payment helps companies save time, are faster
-                and save maximum effort for the clients and save maximum effort.
-                Online invoice payment helps companies save time ”
-              </blockquote>
-              <img
-                class="reviews__stars"
-                src="img/icons/stars.svg"
-                alt="stars"
-              />
-            </div>
 
-            <div class="reviews__card">
-              <blockquote class="reviews__quote">
-                “ Online invoice payment helps companies save time, are faster
-                and save maximum effort for the clients and save maximum effort.
-                Online invoice payment helps companies save time ”
-              </blockquote>
-              <img
-                class="reviews__stars"
-                src="img/icons/stars.svg"
-                alt="stars"
-              />
-            </div>
+              <div class="reviews__card swiper-slide">
+                <blockquote class="reviews__quote">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </blockquote>
+                <img
+                  class="reviews__stars"
+                  src="img/icons/stars.svg"
+                  alt="stars"
+                />
+              </div>
 
-            <div class="reviews__card">
-              <blockquote class="reviews__quote">
-                “ Online invoice payment helps companies save time, are faster
-                and save maximum effort for the clients and save maximum effort.
-                Online invoice payment helps companies save time ”
-              </blockquote>
-              <img
-                class="reviews__stars"
-                src="img/icons/stars.svg"
-                alt="stars"
-              />
+              <div class="reviews__card swiper-slide">
+                <blockquote class="reviews__quote">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </blockquote>
+                <img
+                  class="reviews__stars"
+                  src="img/icons/stars.svg"
+                  alt="stars"
+                />
+              </div>
+              <div class="reviews__card swiper-slide">
+                <blockquote class="reviews__quote">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </blockquote>
+                <img
+                  class="reviews__stars"
+                  src="img/icons/stars.svg"
+                  alt="stars"
+                />
+              </div>
+              <div class="reviews__card swiper-slide">
+                <blockquote class="reviews__quote">
+                  “ Online invoice payment helps companies save time, are faster
+                  and save maximum effort for the clients and save maximum
+                  effort. Online invoice payment helps companies save time ”
+                </blockquote>
+                <img
+                  class="reviews__stars"
+                  src="img/icons/stars.svg"
+                  alt="stars"
+                />
+              </div>
             </div>
+            <div class="swiper-scrollbar reviews__scrollbar"></div>
           </div>
         </div>
       </section>
@@ -729,5 +763,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
