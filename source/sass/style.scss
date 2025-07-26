@@ -2,6 +2,14 @@
 
 @import "reset.scss";
 
+//variables
+
+@import "variables.scss";
+
+//mixins
+
+@import "mixins.scss";
+
 // global
 
 @import "global.scss";
@@ -13,3 +21,62 @@
 // header
 
 @import "header.scss";
+
+// hero
+
+@import "hero.scss";
+
+//rating
+
+@import "rating.scss";
+
+// promo
+
+@import "promo.scss";
+
+// banner
+
+@import "banner.scss";
+
+// restaurants
+
+@import "restaurants.scss";
+
+// dishes
+
+@import "dishes.scss";
+
+// dishes-cards
+
+@import "dishes-cards.scss";
+// app preview
+
+@import "app-preview.scss";
+
+// reviews
+
+@import "reviews.scss";
+
+// discount-banner
+
+@import "discount-banner.scss";
+
+// footer
+
+@import "footer.scss";
+
+// inner-hero
+
+@import "inner-hero.scss";
+
+// popular
+
+@import "popular.scss";
+
+// faq
+
+@import "faq.scss";
+
+// categories
+
+@import "categories.scss";

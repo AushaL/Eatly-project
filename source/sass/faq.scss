@@ -1,0 +1,157 @@
+.faq {
+  padding-top: 172px;
+  padding-bottom: 165px;
+
+  &__title-div {
+    position: relative;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 114px;
+
+    span {
+      color: $blue-color;
+    }
+  }
+
+  &__img {
+    width: 41px;
+    height: 39px;
+    position: absolute;
+    top: -40px;
+    right: 375px;
+  }
+
+  &__item {
+    border-bottom: $decor-line;
+    margin-bottom: 29px;
+    position: relative;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__question {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 59px;
+    margin-bottom: 20px;
+  }
+
+  &__answer {
+    font-size: 20px;
+    line-height: 160%;
+    width: 800px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &.open {
+      max-height: 200px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__button {
+    background-color: $blue-color;
+    background-image: url("../img/the-chicken-king/icons/faq-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &.open {
+      background-image: url("../img/the-chicken-king/icons/faq-minus.png");
+    }
+  }
+}
+
+// tablet
+
+@media (max-width: $tablet-width) {
+  .faq {
+    padding-top: 122px;
+    padding-bottom: 117px;
+
+    &__title {
+      @include tablet-title;
+      margin-bottom: 82px;
+    }
+
+    &__img {
+      width: 29px;
+      height: 28px;
+      top: -30px;
+      right: 265px;
+    }
+
+    &__list {
+      padding-left: 30px;
+      padding-right: 36px;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+    }
+
+    &__question {
+      font-size: 17px;
+      line-height: 42px;
+      margin-bottom: 14px;
+    }
+
+    &__answer {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: $mobile-width) {
+  .faq {
+    padding-top: 88px;
+    padding-bottom: 95px;
+
+    &__title-div {
+      position: relative;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 67px;
+    }
+
+    &__item {
+      margin-bottom: 16px;
+    }
+
+    &__img {
+      width: 22px;
+      height: 20px;
+      top: -15px;
+      right: 40px;
+    }
+
+    &__question {
+      font-size: 12px;
+      line-height: 31px;
+      margin-bottom: 14px;
+    }
+
+    &__answer {
+      font-size: 11px;
+      margin-bottom: 25px;
+      width: 255px;
+    }
+  }
+}

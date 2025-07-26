@@ -1,0 +1,98 @@
+@mixin button {
+  font-family: $main-font-family;
+  color: $white-color;
+  background-color: $blue-color;
+  text-align: center;
+}
+
+@mixin view-all-link {
+  color: $light-grey-color-2;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 45px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+@mixin tablet-view-all-link {
+  color: $light-grey-color-2;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  text-decoration: none;
+  margin-right: 14px;
+}
+
+@mixin right-arrow {
+  width: 25px;
+  height: 25px;
+}
+
+@mixin tablet-right-arrow {
+  width: 18px;
+  height: 18px;
+}
+
+@mixin mobile-right-arrow {
+  width: 23px;
+  height: 23px;
+}
+
+@mixin title {
+  color: $light-black-color;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+  text-align: center;
+}
+@mixin tablet-title {
+  color: $light-black-color;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+}
+
+@mixin mobile-title {
+  color: $light-black-color;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+}
+
+@mixin title-2 {
+  color: $black-color;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 58px;
+}
+
+@mixin tablet-title-2 {
+  color: $black-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+}
+
+@mixin mobile-title-2 {
+  color: $black-color;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+@mixin tag-yellow {
+  color: #daa31a;
+  background-color: #f7edd0;
+}
+
+@mixin tag-red {
+  color: #fb471d;
+  background-color: #f7c5ba;
+}
+
+@mixin tag-green {
+  color: #309d5b;
+  background-color: #b3e6c7;
+}

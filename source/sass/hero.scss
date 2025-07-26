@@ -1,0 +1,241 @@
+.hero {
+  padding-top: 49px;
+  padding-bottom: 85px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__column {
+    width: 596px;
+  }
+
+  &__dec-description {
+    color: $light-grey-color-2;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 120%;
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 76px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 7px;
+      content: "";
+      width: 54px;
+      height: 1px;
+      background-color: $light-grey-color-2;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 120%;
+    color: $black-color;
+    margin-bottom: 16px;
+  }
+
+  &__title-span {
+    color: $blue-color;
+  }
+
+  &__description {
+    color: $light-grey-color;
+    font-family: $secondary-font-family;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 53px;
+    width: 499px;
+
+    span {
+      color: $blue-color;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 33px;
+  }
+
+  &__button {
+    @include button;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 17px 30px;
+    border-radius: 13px;
+  }
+
+  &__button-alt {
+    color: $blue-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 16px 28px;
+    border: solid 1.5px;
+    border-color: $blue-color;
+    border-radius: 12px;
+  }
+
+  &__photo {
+    width: 680px;
+    height: 607px;
+  }
+}
+
+// tablet
+
+@media (max-width: $tablet-width) {
+  .hero {
+    padding-top: 35px;
+    padding-bottom: 60px;
+
+    &__column {
+      width: 351px;
+    }
+
+    &__dec-description {
+      font-size: 11px;
+      padding-left: 54px;
+
+      &::before {
+        width: 38px;
+        top: 5px;
+      }
+    }
+
+    &__title {
+      font-size: 53px;
+      margin-bottom: 11px;
+    }
+
+    &__description {
+      font-size: 13px;
+      line-height: 20px;
+      margin-bottom: 37px;
+      width: 355px;
+    }
+
+    &__buttons {
+      gap: 13px;
+      margin-bottom: 23px;
+    }
+
+    &__button {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 13px 21px;
+      border-radius: 9px;
+    }
+
+    &__button-alt {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 13px 19px;
+      border: solid 1px;
+      border-radius: 9px;
+    }
+
+    &__photo {
+      width: 484px;
+      // height: 432px;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: $mobile-width) {
+  .hero {
+    padding-top: 49px;
+    padding-bottom: 85px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__column {
+      width: 333px;
+      margin-bottom: 48px;
+    }
+
+    &__dec-description {
+      color: $light-black-color;
+      font-size: 9px;
+      line-height: 11px;
+      padding-left: 44px;
+      margin-bottom: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 170px;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        content: "";
+        width: 33px;
+        background-color: $light-black-color;
+      }
+    }
+
+    &__title {
+      font-size: 46px;
+      width: 333px;
+      color: $black-color;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    &__span {
+      display: none;
+    }
+
+    &__description {
+      font-size: 11px;
+      line-height: 17px;
+      text-align: center;
+      margin-bottom: 41px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 308px;
+    }
+
+    &__buttons {
+      gap: 14px;
+      margin-bottom: 26px;
+      justify-content: center;
+    }
+
+    &__button {
+      @include button;
+      letter-spacing: 1%;
+      font-size: 13px;
+      line-height: 19px;
+      padding: 14px 25px;
+      border-radius: 10px;
+      width: 125px;
+      height: 47px;
+    }
+
+    &__button-alt {
+      text-align: center;
+      font-size: 13px;
+      line-height: 19px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      width: 88px;
+      height: 47px;
+    }
+
+    &__photo {
+      width: 323px;
+      height: 288px;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.dishes {
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    border-bottom: $decor-line;
+  }
+
+  &__title {
+    @include title;
+    text-align: center;
+    margin-bottom: 76px;
+
+    span {
+      color: $blue-color;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-align: right;
+    @include view-all-link;
+  }
+
+  &__right-arrow {
+    @include right-arrow;
+    position: relative;
+    bottom: 2px;
+
+    path {
+      fill: $light-grey-color-2;
+    }
+  }
+}
+
+// tablet
+
+@media (max-width: $tablet-width) {
+  .dishes {
+    &__container {
+      padding-top: 71px;
+      padding-bottom: 85px;
+    }
+
+    &__title {
+      @include tablet-title;
+      margin-bottom: 53px;
+    }
+
+    &__link {
+      @include tablet-view-all-link;
+    }
+
+    &__right-arrow {
+      @include tablet-right-arrow;
+      bottom: 1.5px;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: $mobile-width) {
+  .dishes {
+    &__container {
+      padding-top: 85px;
+      padding-bottom: 66px;
+    }
+
+    &__title {
+      @include mobile-title;
+      width: 127px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 61px;
+    }
+
+    &__link {
+      @include view-all-link;
+    }
+
+    &__right-arrow {
+      @include mobile-right-arrow;
+    }
+  }
+}

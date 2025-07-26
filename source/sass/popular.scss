@@ -1,0 +1,61 @@
+.popular {
+  &__container {
+    border-bottom: $decor-line;
+  }
+
+  &__title {
+    color: $black-color;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 60px;
+  }
+
+  &__div {
+    margin-bottom: 145px;
+  }
+
+  &__div-chicken {
+    margin-bottom: 152px;
+  }
+}
+
+// tablet
+
+@media (max-width: $tablet-width) {
+  .popular {
+    &__title {
+      font-size: 25px;
+      line-height: 40px;
+      margin-bottom: 42px;
+    }
+
+    &__div {
+      margin-bottom: 104px;
+    }
+
+    &__div-chicken {
+      margin-bottom: 108px;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: mobile-width) {
+  .popular {
+    &__title {
+      font-size: 25px;
+      line-height: 40px;
+      margin-bottom: 49px;
+    }
+
+    &__div {
+      margin-bottom: 114px;
+    }
+
+    &__div-chicken {
+      margin-bottom: 112px;
+    }
+  }
+}
